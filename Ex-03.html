@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Edge = +prompt("Nhap vao Chieu dai canh Tam giac: ");
+    for (a=1;a<=2;a++)
+    {
+        for(i=1;i<=Edge;i++)
+        {
+            for (j=1;j<=i;j++)
+            {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+        document.write("<br>");
+        for(i=Edge;i>=1;i--)
+        {
+            for (j=1;j<=i;j++)
+            {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+        document.write("<br>");
+    }
+</script>
+</body>
+</html>

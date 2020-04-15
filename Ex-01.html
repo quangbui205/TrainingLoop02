@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let f1 = +prompt("Nhap so dau tien cua day Fibonacci:");
+    while (1)
+    {
+        if (f1>1)
+        {
+            alert("Xin moi nhap lai so dau tien cua day:");
+            f1 = +prompt("Nhap so dau tien cua day Fibonacci:");
+        }
+        else
+        {
+            break;
+        }
+    }
+    let f2 = 1;
+    let num = +prompt("Nhap so luong so muon in ra:");
+    document.write(f1+ "<br>" + f2 +"<br>");
+    let f3 ;
+    for(i=3;i<=num;i++)
+    {
+        f3 = f1+ f2;
+        f1=f2;
+        f2=f3;
+        document.write(f3 + "<br>");
+    }
+</script>
+</body>
+</html>

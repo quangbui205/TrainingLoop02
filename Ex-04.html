@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let leg = +prompt("Nhap vao Chieu Dai Hinh Chu Nhat: ");
+    let wig = +prompt("Nhap vao Chieu Rong Hinh Chu Nhat ");
+    for(i=1;i<=wig;i++)
+    {
+        for (j=1;j<=leg;j++)
+        {
+            if ((i==1)||(j==1)||(i==wig)||(j==leg))
+            {
+                document.write("*");
+            }
+            else
+            {
+                document.write(" &nbsp;");
+            }
+        }
+        document.write("<br>");
+    }
+</script>
+</body>
+</html>

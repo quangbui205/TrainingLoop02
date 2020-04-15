@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let money = +prompt("Nhap so tien:    VNĐ");
+    let int = +prompt("Nhap lai suat hang thang:     %");
+    let month = +prompt("Nhap so thang gui tiet kiem: ");
+    let tienlai, moneymonth;
+    let totalmoney=0;
+    for (i=1;i<=month;i++)
+    {
+        moneymonth = Math.pow((1+int/100),i)*money;
+        totalmoney += moneymonth;
+    }
+    tienlai= totalmoney-money*month;
+    alert("Tong so tien lai duoc qua " + month +" thang la " + tienlai.toFixed(0) + "VNĐ");
+</script>
+</body>
+</html>
